@@ -1,0 +1,36 @@
+    nome = input("entre com seu nome")
+    print ("bem vindo" , nome)
+Nome()
+
+
+
+def Salario():
+    salario = float(input("insira seu salario  mensal:"))
+    print ("salario e:" , salario)
+Salario()    
+
+
+
+def Soma():
+    valor1 = int(input("entre com o valor 1: "))
+    valor2 = float(input("entre com o valor 2: "))
+    soma = valor1 + valor2
+    print(soma)
+Soma()
+
+
+
+def Acesso():
+    print("bem vindo")
+
+def Menu():
+    print("opcoes do menu")
+    print("para acessar escolha 1: ")
+    print("para acessar escolha 0: ")
+escolha = int(input("escolha: "))
+if escolha == 1:
+    Acesso()
+elif escolha == 0:
+    print("saiu")
+else:
+    print("nao foi possivel acessar")
