@@ -1,0 +1,120 @@
+1- 
+cor = input("Digite a cor do semáforo: ")
+
+def checar_semaforo(cor):
+    if cor == "verde":
+        return "Siga!"
+    elif cor == "amarelo":
+        return "Atenção!"
+    elif cor == "vermelho":
+        return "Pare!"
+    else:
+        return "Cor inválida."
+
+print(checar_semaforo(cor))
+
+2- 
+imc = float(input("adicione seu peso em (kg): "))
+
+def classificar_imc(imc):
+
+  if imc < 18.5:
+    return "Abaixo do peso"
+  elif 18.5 <= imc < 24.9:
+    return "Peso normal"
+  elif 25.0 <= imc < 29.9:
+    return "Sobrepeso"
+  else:
+    return "Obesidade"
+
+print(classificar_imc(imc))
+
+3-
+renda = float(input("entre com sua renda: "))
+score = int(input("digite o numero do credito: "))
+
+def checar_elegibilidade(renda, score):
+    if renda >= 5000 and score >= 700:
+        return "Cartão Premium Elegível"
+    elif renda >= 2000 and score >= 600:
+        return "Cartão Standard Elegível"
+    else:
+        return "Não elegível no momento."
+
+
+print(checar_elegibilidade(renda,score))
+
+4-
+temperatura = float(input("entre com a temperatura do local: "))
+
+def sugerir_roupa(temperatura):
+  if temperatura >= 30:
+    return "Muito calor! Use roupas leves"
+  elif temperatura <= 18:
+    return "Está frio. Vista um casaco! "
+  else:
+    return "Clima agradável. Uma camiseta e calça são ideais"
+
+print(sugerir_roupa(temperatura))
+
+5-
+def verificar_vencedor():
+ placar_time_a = float(input("qual o placar do time a"))
+ placar_time_b = float(input("qual o placar do time b"))
+ if placar_time_a>placar_time_b:print("TIME A VENCEUUU")
+ elif placar_time_b>placar_time_a:print("TIME B VENCEUUU")
+ else: print("EMPATE!")
+
+verificar_vencedor() 
+
+6-
+semana_dia = input("diga o dia da semana: ").lower()
+
+def semana(semana_dia):
+  if semana_dia == "segunda" or semana_dia ==  "terca" or semana_dia == "quarta"or semana_dia == "quinta"or semana_dia == "sexta" :
+    return "Dia Útil. 💼"
+  elif  semana_dia == "sabado" or semana_dia == "domingo":
+    return "Fim de Semana! 🎉"
+  else:
+    return "nao existe essa semana"
+
+print(semana(semana_dia))
+
+7-
+def calcularfrete():
+    pedido= float(input("Digite o valor do pedido: "))
+    if pedido > 80:
+            print("Frete grátis!")
+    else:
+            print( "seu frete é:",pedido + 10  )
+calcularfrete()
+
+8-
+def classificaravaliacao():
+    estrelas= int(input("Digite a avaliação em estrelas (1-5): "))
+    if estrelas == 5:
+               print("Excelente!")
+    elif estrelas == 4:
+               print("Muito bom!")
+    elif estrelas == 3:
+               print("satisfatorio")
+    elif estrelas == 2 or estrelas == 1:
+               print("insatisfatório")
+    else:
+                   print("Avaliação inválida")
+      
+classificaravaliacao()
+    
+9-
+  def identificar_veiculo(placa):
+   placa = input("Digite a placa do veículo: ")
+   inicial = placa[0].upper()
+
+   if inicial in ['A', 'B', 'C']:
+      print ("Carro de Passeio")
+   elif inicial in ['M', 'N', 'O']:
+      print ("Motocicleta")
+   else:
+      print ("Outro Tipo de Veículo")
+
+identificar_veiculo("placa")
